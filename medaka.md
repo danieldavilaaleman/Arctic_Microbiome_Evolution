@@ -16,3 +16,4 @@ cd samtools-1.18
 make
 make install
 ```
+Same thing with bcftool and htslib
