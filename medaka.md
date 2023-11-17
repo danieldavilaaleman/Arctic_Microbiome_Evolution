@@ -7,3 +7,12 @@ virtualenv medaka --python=python3 --prompt "(medaka) "
 pip install --upgrade pip
 pip install medaka
 ```
+To install samtools whitout root access, I need to set a prefix for installation on ~/usr directory
+```
+wget https://github.com/samtools/samtools/releases/download/1.18/samtools-1.18.tar.bz2
+tar -xvjf samtools-1.18.tar.bz2
+cd samtools-1.18
+./configure --prefix=$HOME/usr
+make
+make install
+```
