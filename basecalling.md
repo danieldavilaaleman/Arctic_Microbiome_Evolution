@@ -1,4 +1,4 @@
-# Basecalling using GPU
+# Basecalling and demultiplexing using GPU
 I used bigmem for GPU basecalling to be faster than cpu basecalling
 ```
 #!/bin/bash
@@ -15,4 +15,5 @@ I used bigmem for GPU basecalling to be faster than cpu basecalling
 module load python/3.10.4
 ####### Run your script #########################
 dorado basecaller --min-qscore 8 hac --trim adapters pod5/ > gpu_initial_evolution.bam
+dorado demux --output-dir output_demux --kit-name SQK-RBK114-24 gpu_Rapid_barcoding_initial_evolution.bam
 ```
