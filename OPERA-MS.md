@@ -70,6 +70,8 @@ perl ../OPERA-MS.pl \
 ## Improvemnet of assembly 
 To improve asselmbly, I use kneaddata to remove low quality reads and remove duplicate (create a conda environment for this software) and chopper for remove reads <500 bp  and quality <8 in nanopore reads **NOTE:For some reason dorado does not remove QC <8 which was the command that I requesrted**
 
+**Kneaddata output:** Because I do not use a DB for remove read contaminats, the final output of kneaddata to use in the assmebly is repeats.removed.fastq
+
 ```
 #!/bin/bash
 ####### Reserve computing resources #############
@@ -105,3 +107,26 @@ chopper for nanopore reads
 cat Replicate3_Initial_Long_reads_07072024.fastq chopper -q 8 -l 500 > filtered_Replicate3_Initial_Long_reads_07072024.fastq
 ```
 
+Run opera_ms with filtered reads for Replicate 3
+
+```
+#!/bin/bash
+####### Reserve computing resources #############
+#SBATCH --time=96:00:00
+#SBATCH --mem=25G
+#SBATCH --partition=cpu2023
+#SBATCH --nodes=1
+#SBATCH --ntasks=2
+#SBATCH --cpus-per-task=4
+
+####### Set environment variables ###############
+module load perl/5.38.2
+
+####### Run your script #########################
+perl ~/software/OPERA-MS/OPERA-MS.pl \
+    --short-read1 Rep3_kneaddata_output/CRD_H_R3_T1_1_kneaddata.repeats.removed.1.fastq \
+    --short-read2 Rep3_kneaddata_output/CRD_H_R3_T1_1_kneaddata.repeats.removed.1.fastq \
+    --long-read filtered_Replicate3_Initial_Long_reads_07072024.fastq \
+    --out-dir Rep3_kneaddata_chopper_hybrid_results --num-processors 8 \
+    --no-strain-clustering \
+```
