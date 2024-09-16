@@ -102,6 +102,6 @@ chopper for nanopore reads
 ####### Set environment variables ###############
 
 ####### Run your script #########################
-chopper -q 8 -l 500 -i Replicate3_Initial_Long_reads_07072024.fastq > filtered_Replicate3_Initial_Long_reads_07072024.fastq
+cat Replicate3_Initial_Long_reads_07072024.fastq chopper -q 8 -l 500 > filtered_Replicate3_Initial_Long_reads_07072024.fastq
 ```
 
