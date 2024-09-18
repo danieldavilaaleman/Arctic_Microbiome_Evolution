@@ -17,3 +17,10 @@ module load python/3.10.4
 dorado basecaller --min-qscore 8 hac --trim adapters pod5/ > gpu_initial_evolution.bam
 dorado demux --output-dir output_demux --kit-name SQK-RBK114-24 gpu_Rapid_barcoding_initial_evolution.bam
 ```
+
+## bam to Fastq
+To convert bam files to fastq files I use module biobuild
+```
+module load biobuilds/2017.11
+bamToFasq <BAM> -fq <fastq>
+```
