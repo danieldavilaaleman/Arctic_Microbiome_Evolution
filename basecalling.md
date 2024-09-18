@@ -22,5 +22,5 @@ dorado demux --output-dir output_demux --kit-name SQK-RBK114-24 gpu_Rapid_barcod
 To convert bam files to fastq files I use module biobuild
 ```
 module load biobuilds/2017.11
-bamToFasq -i <BAM> -fq <fastq>
+bamToFastq -i <BAM> -fq <fastq>
 ```
