@@ -131,3 +131,6 @@ perl ~/software/OPERA-MS/OPERA-MS.pl \
     --out-dir Rep3_kneaddata_chopper_hybrid_results --num-processors 8 \
     --no-strain-clustering \
 ```
+
+## Conclusion
+kneaddata only without chopper gaves the best opera-ms assembler and metaWRAP output
