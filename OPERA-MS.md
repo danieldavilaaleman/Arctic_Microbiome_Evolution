@@ -70,7 +70,6 @@ perl ../OPERA-MS.pl \
 ## Improvemnet of assembly 
 To improve asselmbly, I use kneaddata to remove low quality reads and remove duplicate (create a conda environment for this software) and chopper for remove reads <500 bp  and quality <8 in nanopore reads **NOTE:For some reason dorado does not remove QC <8 which was the command that I requesrted**
 
-***NOTE CONDA*** For running kneaddata and nanoplot, I need to activate conda environment on the terminal before running  the sbatch script
 **Kneaddata output:** Because I do not use a DB for remove read contaminats, the final output of kneaddata to use in the assmebly is repeats.removed.fastq
 
 ```
@@ -84,6 +83,8 @@ To improve asselmbly, I use kneaddata to remove low quality reads and remove dup
 #SBATCH --cpus-per-task=4
 
 ####### Set environment variables ###############
+source ~/software/miniconda3/etc/profile.d/conda.sh
+conda activate kneaddata
 ####### Run your script #########################
 kneaddata --input1 CRD_H_R3_T1_1.fq.gz --input2 CRD_H_R3_T1_2.fq.gz --output kneaddata_output \
 -t 8 -p 2 --remove-intermediate-output --run-fastqc-start --run-fastqc-end \
