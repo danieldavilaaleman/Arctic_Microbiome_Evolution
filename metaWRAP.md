@@ -32,17 +32,17 @@ metawrap reassemble_bins -o BIN_REASSEMBLY_Replicate1_kneaddata_hybrid \
 
 However, the re-assembly reduces the N50 of the bins without improving the quality of the bins
 ### Bin Refinement
-bin.6   99.87   0.517   0.575   Gammaproteobacteria     3685647 4165923 binsA
-bin.4   98.02   0.479   0.582   Rhodobacteraceae        3207486 3875359 binsA
-bin.2   94.12   2.818   0.576   Gammaproteobacteria     1437279 4268779 binsA
-bin.5   83.11   2.724   0.538   Gammaproteobacteria     25526   3950401 binsB
-bin.1   67.44   2.102   0.388   Gammaproteobacteria     33241   2872914 binsA
-bin.3   54.68   0.693   0.613   Sphingomonadales        15365   2105367 binsAB
+bin.6   99.87   0.517   0.575   Gammaproteobacteria     3685647 4165923 binsA\
+bin.4   98.02   0.479   0.582   Rhodobacteraceae        3207486 3875359 binsA\
+bin.2   94.12   2.818   0.576   Gammaproteobacteria     1437279 4268779 binsA\
+bin.5   83.11   2.724   0.538   Gammaproteobacteria     25526   3950401 binsB\
+bin.1   67.44   2.102   0.388   Gammaproteobacteria     33241   2872914 binsA\
+bin.3   54.68   0.693   0.613   Sphingomonadales        15365   2105367 binsAB\
 
 #### Bin Re-Assembly with SPADES
-bin.1.permissive        67.76   2.102   0.388   Gammaproteobacteria     18316   2735448
-bin.2.permissive        95.67   1.027   0.577   Gammaproteobacteria     440751  4184364
-bin.3.permissive        55.22   0.750   0.613   Sphingomonadales        11246   2097065
-bin.4.orig      98.02   0.479   0.582   Rhodobacteraceae        3207486 3875359
-bin.5.permissive        83.68   2.083   0.539   Gammaproteobacteria     17400   3745520
-bin.6.orig      99.87   0.517   0.575   Gammaproteobacteria     3685647 4165923
+bin.1.permissive        67.76   2.102   0.388   Gammaproteobacteria     18316   2735448\
+bin.2.permissive        95.67   1.027   0.577   Gammaproteobacteria     440751  4184364\
+bin.3.permissive        55.22   0.750   0.613   Sphingomonadales        11246   2097065\
+bin.4.orig      98.02   0.479   0.582   Rhodobacteraceae        3207486 3875359\
+bin.5.permissive        83.68   2.083   0.539   Gammaproteobacteria     17400   3745520\
+bin.6.orig      99.87   0.517   0.575   Gammaproteobacteria     3685647 4165923\
