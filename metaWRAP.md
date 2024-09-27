@@ -30,7 +30,7 @@ metawrap reassemble_bins -o BIN_REASSEMBLY_Replicate1_kneaddata_hybrid \
 -t 8 -m 40 -c 50 -x 10 -b Refinement_Binning_Rep1_kneaddata_hybrid/metawrap_50_10_bins
 ```
 
-However, the re-assembly reduces the N50 of the bins without improving the quality of the bins
+However, the re-assembly reduces the N50 of the bins without significantly improving the quality of the bins
 ### Bin Refinement
 bin.6   99.87   0.517   0.575   Gammaproteobacteria     3685647 4165923 binsA\
 bin.4   98.02   0.479   0.582   Rhodobacteraceae        3207486 3875359 binsA\
