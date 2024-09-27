@@ -133,4 +133,6 @@ perl ~/software/OPERA-MS/OPERA-MS.pl \
 ```
 
 ## Conclusion
-kneaddata only without chopper gaves the best opera-ms assembler and metaWRAP output
+kneaddata only without chopper gaves the best opera-ms assembler and metaWRAP output \
+
+I also tried operams with raw reads short- and long- but the output of metawrap gaves me less HQ bins (6 bins in kneaddata only vs 5 bins raw reads both) with lower N50.
